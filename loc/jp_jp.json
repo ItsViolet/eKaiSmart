@@ -95,7 +95,7 @@
     "create_fake_storage": "ダミーの暗号化ウォレットの作成",
     "create_password": "パスワードの作成",
     "create_password_explanation": "ダミーのウォレットのパスワードはメインのウォレットのパスワードと異なる必要があります。",
-    "help": "BuleWallet のウォレットの復号に必要なパスワードを第三者に強要される場合、コインを安全に保護するためにメインのウォレットとは異なるパスワードで暗号化されたダミーのウォレットを作成することが可能です。第三者へ異なるパスワードを提供すれば、BlueWallet のダミーの暗号化ウォレットを復号することとなり、メインのウォレットは隠匿されコインは安全に保護されます。",
+    "help": "BuleWallet のウォレットの復号に必要なパスワードを第三者に強要される場合、コインを安全に保護するためにメインのウォレットとは異なるパスワードで暗号化されたダミーのウォレットを作成することが可能です。第三者へ異なるパスワードを提供すれば、eKai SmartWallet のダミーの暗号化ウォレットを復号することとなり、メインのウォレットは隠匿されコインは安全に保護されます。",
     "help2": "新規のダミーのウォレットはメインと同様に機能します。少額のコインを入金しておくことでダミーと疑われないようにすることが可能です。",
     "password_should_not_match": "ダミーのウォレットのパスワードはメインのウォレットのパスワードと異なる必要があります。",
     "passwords_do_not_match": "パスワードが一致しません。もう一度試してください。",
@@ -210,7 +210,7 @@
     "problem_with_psbt": "PSBTに問題"
   },
   "settings": {
-    "about": "BlueWallet について",
+    "about": "eKai SmartWallet について",
     "about_awesome": "Built with the awesome",
     "about_backup": "常に秘密鍵はバックアップしましょう！",
     "about_free": "BlueWalletはフリーでオープンソースのプロジェクトです。ビットコインユーザーによって作られています。",
@@ -417,7 +417,7 @@
     "import_passphrase_title": "パスフレーズ",
     "import_passphrase_message": "パスフレーズがある場合は入力",
     "import_error": "インポートに失敗しました。入力したデータが有効か確認してください。",
-    "import_explanation": "ここにシードフレーズ、公開鍵、WIFなど持っているものを入力してください。BlueWallet が正しい形式を推測しウォレットをインポートします。",
+    "import_explanation": "ここにシードフレーズ、公開鍵、WIFなど持っているものを入力してください。eKai SmartWallet が正しい形式を推測しウォレットをインポートします。",
     "import_imported": "インポート完了",
     "import_scan_qr": "QR コードの読み取り",
     "import_success": "成功",
